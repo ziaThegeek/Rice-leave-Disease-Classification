@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Like"
+        android:icon="@drawable/like"/>
+    <item
+        android:id="@+id/faqs"
+        android:title="Share"
+        android:icon="@drawable/share"/>
+    <item
+        android:id="@+id/info_center"
+        android:title="Read More"
+        android:icon="@drawable/read_more"/>
+</menu>

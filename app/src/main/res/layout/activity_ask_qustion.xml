@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ask_qustion">
+    <RelativeLayout
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="14sp"
+        android:background="#1EB525">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20sp"
+            android:drawableLeft="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20sp"
+            android:paddingVertical="10sp"
+            android:text="info center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topPanel">
+
+        <LinearLayout
+            android:layout_marginTop="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="problem statement"
+                android:textAllCaps="false"
+                android:textColor="#A3000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:hint="write here maximum letters(60)"
+                android:id="@+id/statement"
+                android:maxLines="3"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="problem description"
+                android:textAllCaps="false"
+                android:textColor="#A3000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:hint="write here maximum letters(160)"
+                android:id="@+id/description"
+                android:maxLines="10"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Field image"
+                android:textAllCaps="false"
+                android:textColor="#A3000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="200sp"
+    app:cardCornerRadius="20sp"
+    android:layout_margin="8sp"
+    >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image"
+                    android:src="@drawable/logo" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="change image"
+        android:id="@+id/change"
+        android:gravity="center"
+        android:layout_gravity="right"
+
+        android:textSize="8sp"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginTop="6sp"
+        />
+
+</androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="40sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="30sp"
+                android:id="@+id/submit"
+                android:text="submit" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
